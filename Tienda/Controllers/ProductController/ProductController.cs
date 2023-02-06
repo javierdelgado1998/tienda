@@ -54,7 +54,7 @@ namespace Tienda.Controllers.ProductController
                 {
                     return BadRequest();
                 }
-                return CreatedAtAction("Create", new { id = product.Id }, product);
+                return CreatedAtAction("Get", new { id = product.Id }, product);
             }
             catch (Exception ex)
             {
